@@ -266,7 +266,7 @@ export default function Admin() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className={`w-full py-3 rounded-lg bg-purple-700 hover:bg-purple-800 text-slate-800 font-medium shadow-lg transition-all transform hover:scale-105 ${
+                    className={`w-full py-3 rounded-lg bg-purple-700 hover:bg-purple-800 text-white font-medium shadow-lg transition-all transform hover:scale-105 ${
                       loading ? "opacity-70 cursor-not-allowed" : ""
                     }`}
                   >
