@@ -183,34 +183,9 @@ export default function Admin() {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-purple-500 via-purple-400 to-indigo-400">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-r from-[#F4F5F7] to-[#3F3BF2] animate-gradient bg-[length:200%_200%]">
       {/* Toast notification container */}
       <Toaster position="top-center" />
-
-      {/* Dynamic bubbles */}
-      <div
-        className="absolute top-20 left-20 w-64 h-64 bg-purple-500 rounded-full opacity-20 blur-3xl"
-        style={{
-          transform: `translate(${animationPosition.x}px, ${animationPosition.y}px)`,
-        }}
-      ></div>
-      <div
-        className="absolute bottom-20 right-40 w-80 h-80 bg-indigo-500 rounded-full opacity-20 blur-3xl"
-        style={{
-          transform: `translate(${-animationPosition.x * 1.5}px, ${
-            -animationPosition.y * 1.5
-          }px)`,
-        }}
-      ></div>
-      <div
-        className="absolute top-1/3 left-1/4 w-40 h-40 bg-pink-500 rounded-full opacity-20 blur-3xl"
-        style={{
-          transform: `translate(${animationPosition.y * 2}px, ${
-            -animationPosition.x * 2
-          }px)`,
-        }}
-      ></div>
-
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-center items-center min-h-screen">
           {!isAuthenticated ? (

@@ -1,12 +1,23 @@
 @import "tailwindcss";
-@keyframes gradient-move {
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
+
+@keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
 .animate-gradient {
-  background-size: 200% 200%;
-  animation: gradient-move 8s ease infinite;
-  backdrop-filter: blur(10px);
+  animation: gradientAnimation 10s ease-in-out infinite;
 }
+
+html, body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+}
+
+/* p {
+  margin-bottom: 60px;
+} */
