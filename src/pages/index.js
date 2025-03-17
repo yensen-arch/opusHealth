@@ -82,7 +82,9 @@ export default function Home() {
         if (data.error === "EMAIL_EXISTS") {
           toast.error("This email is already registered!", { autoClose: 3000 });
         } else {
-          toast.error("Failed to register. Please try again.", { autoClose: 3000 });
+          toast.error("Failed to register. Please try again.", {
+            autoClose: 3000,
+          });
         }
       }
     } catch (error) {
@@ -94,34 +96,9 @@ export default function Home() {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-purple-500 via-purple-400 to-indigo-400">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-white via-purple-400 to-indigo-600 animate-gradient">
       {/* Toast notification container */}
       <Toaster position="top-center" />
-
-      {/* Dynamic bubbles - now using animationPosition instead of mousePosition */}
-      <div
-        className="absolute top-20 left-20 w-64 h-64 bg-purple-600 rounded-full opacity-20 blur-3xl"
-        style={{
-          transform: `translate(${animationPosition.x}px, ${animationPosition.y}px)`,
-        }}
-      ></div>
-      <div
-        className="absolute bottom-20 right-40 w-80 h-80 bg-indigo-600 rounded-full opacity-20 blur-3xl"
-        style={{
-          transform: `translate(${-animationPosition.x * 1.5}px, ${
-            -animationPosition.y * 1.5
-          }px)`,
-        }}
-      ></div>
-      <div
-        className="absolute top-1/2 left-1/4 w-40 h-40 bg-pink-500 rounded-full opacity-20 blur-3xl"
-        style={{
-          transform: `translate(${animationPosition.y * 2}px, ${
-            -animationPosition.x * 2
-          }px)`,
-        }}
-      ></div>
-
       <div className="relative flex flex-col items-center justify-center min-h-screen px-4">
         {/* Main glassmorphic card - improved contrast */}
         <div className="w-full hover:shadow-2xl transition-all  max-w-xl p-8 rounded-2xl backdrop-blur-lg bg-white/30 shadow-xl border border-white/30">
