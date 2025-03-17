@@ -219,17 +219,17 @@ export default function Admin() {
               <div className="backdrop-blur-lg bg-white/30 rounded-2xl shadow-xl border border-white/30 p-8">
                 <div className="flex justify-center mb-6">
                   <div className="p-4 rounded-full bg-purple-500/20 backdrop-blur-md border border-white/30">
-                    <FaLock className="text-slate-800 text-2xl" />
+                    <FaLock className="text-white text-2xl" />
                   </div>
                 </div>
-                <h2 className="text-3xl font-bold text-slate-800 text-center mb-6 drop-shadow-md">
+                <h2 className="text-3xl font-bold text-white text-center mb-6 drop-shadow-md">
                   Admin Login
                 </h2>
 
                 <form onSubmit={handleLogin}>
                   <div className="mb-4">
                     <label
-                      className="block text-slate-800 font-medium mb-2 drop-shadow-sm"
+                      className="block text-white font-medium mb-2 drop-shadow-sm"
                       htmlFor="email"
                     >
                       Email
@@ -247,7 +247,7 @@ export default function Admin() {
 
                   <div className="mb-6">
                     <label
-                      className="block text-slate-800 font-medium mb-2 drop-shadow-sm"
+                      className="block text-white font-medium mb-2 drop-shadow-sm"
                       htmlFor="password"
                     >
                       Password
